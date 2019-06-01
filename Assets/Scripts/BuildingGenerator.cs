@@ -14,8 +14,6 @@ public class BuildingGenerator : MonoBehaviour
     [SerializeField] float randMaxScale;
     [SerializeField] float addMovementDelay;
     [SerializeField] GameObject worldRotater;
-    [SerializeField] float avoidXMin;
-    [SerializeField] float avoidXMax;
 
     List<GameObject> staticPieces = new List<GameObject>();
     List<GameObject> movingPieces = new List<GameObject>();
@@ -35,6 +33,8 @@ public class BuildingGenerator : MonoBehaviour
                     CreateStartingRotation(),
                     transform);
                 newBuilding.transform.localScale = CreateStartingScale();
+                newBuilding.transform.GetChild(0).GetComponent<MeshRenderer>().shadowCastingMode =
+                    UnityEngine.Rendering.ShadowCastingMode.Off;
 
                 staticPieces.Add(newBuilding);
             }
@@ -42,6 +42,8 @@ public class BuildingGenerator : MonoBehaviour
     }
 
     Vector3 CreateStartingPosition() {
+        float roughBuildingSizeOffset = 15f;
+
         float xPos;
         for (; ; ) {
             xPos = Random.Range(
@@ -49,7 +51,11 @@ public class BuildingGenerator : MonoBehaviour
                 GameManager.xCreationMax
             );
 
-            if (xPos < avoidXMin || xPos > avoidXMax) {
+            if (
+                xPos < GameManager.roadSize / 2 * -1 - roughBuildingSizeOffset
+                ||
+                xPos > GameManager.roadSize / 2 + roughBuildingSizeOffset
+            ) {
                 break;
             }
         }
@@ -71,6 +77,7 @@ public class BuildingGenerator : MonoBehaviour
 
     void Update() {
         AddMovingPiece();
+        EnableDisableShadows();
     }
 
     void AddMovingPiece() {
@@ -111,5 +118,10 @@ public class BuildingGenerator : MonoBehaviour
 
             prevAddTime = Time.time;
         }
+    }
+
+    // implemnet later
+    void EnableDisableShadows() {
+
     }
 }
