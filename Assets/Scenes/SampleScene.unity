@@ -313,6 +313,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d4dc04fa71fb843b17f90ec5d6ac6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &923871866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923871868}
+  - component: {fileID: 923871867}
+  m_Layer: 0
+  m_Name: Curb Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &923871867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923871866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730a232c2d8a712458d4fa533bef058f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curbObject: {fileID: 4400360406741791192, guid: 3fa6d9eaab2908e4d938d12838f47603,
+    type: 3}
+  worldRotater: {fileID: 727127973}
+--- !u!4 &923871868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923871866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,39 +474,37 @@ MonoBehaviour:
   buildingPieces:
   - prefab: {fileID: 9085172439299882950, guid: 0f32a4ee8489a7aa8b9f6f5bbee445a3,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 1445401907566602847, guid: 564c6f59955749db5a6a53a8faadf5d3,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 4499786699582125784, guid: 68316535ea7a61beca7aa5e620c0558d,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 314430375227889015, guid: 1efd767e13bcf4c2fb486e48ba7e4b15, type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 7898762667365299210, guid: 1ca7ea26a8c8b30309e4db136b309e8b,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 2812521753164430303, guid: 1cc3612b7efc142fda85e562f24ccafe,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 3085589771436712085, guid: 8f6530c8d4f06df32956b4acd7de6eb3,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 8583078768964336839, guid: ba837dbd016727c7c93d7f9668e7bf2f,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 3428039959151836749, guid: a8d93a0d5c360e78589baf6022f08fb6,
       type: 3}
-    count: 50
+    count: 55
   - prefab: {fileID: 4536565915406991528, guid: 3a295761e8b85438195015448156f41d,
       type: 3}
-    count: 50
+    count: 55
   randMinScale: 0.8
   randMaxScale: 1.2
   addMovementDelay: 0.025
   worldRotater: {fileID: 727127973}
-  avoidXMin: -40
-  avoidXMax: 40
 --- !u!4 &1707929945
 Transform:
   m_ObjectHideFlags: 0
