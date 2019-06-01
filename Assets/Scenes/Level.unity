@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -472,34 +472,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingPieces:
-  - prefab: {fileID: 5544634284100569835, guid: ef178af865517492c8be998e5d1c2af7,
+  - prefab: {fileID: 9085172439299882950, guid: 0f32a4ee8489a7aa8b9f6f5bbee445a3,
       type: 3}
     count: 50
-  - prefab: {fileID: 8819445046258223322, guid: 26c5e1aea8c890999881101f88bdffc3,
+  - prefab: {fileID: 1445401907566602847, guid: 564c6f59955749db5a6a53a8faadf5d3,
       type: 3}
     count: 50
-  - prefab: {fileID: 1635110068925086820, guid: 04751d42d2e0c57bebf71a8416a51cb4,
+  - prefab: {fileID: 4499786699582125784, guid: 68316535ea7a61beca7aa5e620c0558d,
       type: 3}
     count: 50
-  - prefab: {fileID: 4179309030252129247, guid: 80fa0bfdb486e6a019805bfe76a2f063,
+  - prefab: {fileID: -8459347753580035099, guid: 1efd767e13bcf4c2fb486e48ba7e4b15,
       type: 3}
     count: 50
-  - prefab: {fileID: 7510385205847637396, guid: acdf65bc3f2f757bc9e8e4a30436a24e,
+  - prefab: {fileID: 7898762667365299210, guid: 1ca7ea26a8c8b30309e4db136b309e8b,
       type: 3}
     count: 50
-  - prefab: {fileID: 3791179638473335161, guid: 4074c7b04d55ad99587b9dc66f593b55,
+  - prefab: {fileID: 2812521753164430303, guid: 1cc3612b7efc142fda85e562f24ccafe,
       type: 3}
     count: 50
-  - prefab: {fileID: 1771831803625418907, guid: 21c5e6562396f8af3b65278e4c0a3a67,
+  - prefab: {fileID: 3085589771436712085, guid: 8f6530c8d4f06df32956b4acd7de6eb3,
       type: 3}
     count: 50
-  - prefab: {fileID: 5236534244192063651, guid: a10b0123f0653966096895df517112e9,
+  - prefab: {fileID: 8583078768964336839, guid: ba837dbd016727c7c93d7f9668e7bf2f,
       type: 3}
     count: 50
-  - prefab: {fileID: 1071418665059424844, guid: 3cfb033259386152196ac7c5b456c721,
+  - prefab: {fileID: 3428039959151836749, guid: a8d93a0d5c360e78589baf6022f08fb6,
       type: 3}
     count: 50
-  - prefab: {fileID: 6297904058913352460, guid: 179cd0827aee93679823bd819243dee1,
+  - prefab: {fileID: 4536565915406991528, guid: 3a295761e8b85438195015448156f41d,
       type: 3}
     count: 50
   randMinScale: 0.8
