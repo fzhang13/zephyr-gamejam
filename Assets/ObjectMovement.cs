@@ -104,7 +104,7 @@ public class ObjectMovement : MonoBehaviour
         if (xMovement && zMovement && yMovement)
         {
             transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 4), Mathf.PingPong(Time.time * speed, 4) + 1, Mathf.PingPong(Time.time * speed, 4));
-            transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 4), Mathf.PingPong(Time.time * speed, 4) + 1, transform.position.z);
+            transform.position = new Vector3(Mathf.PingPong(Time.time * speed, 4), Mathf.PingPong(Time.time * speed, 4) + 1, Mathf.PingPong(Time.time * speed, 4));
         }
 
     }
