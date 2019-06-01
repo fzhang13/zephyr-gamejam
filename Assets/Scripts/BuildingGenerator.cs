@@ -33,8 +33,6 @@ public class BuildingGenerator : MonoBehaviour
                     CreateStartingRotation(),
                     transform);
                 newBuilding.transform.localScale = CreateStartingScale();
-                newBuilding.transform.GetChild(0).GetComponent<MeshRenderer>().shadowCastingMode =
-                    UnityEngine.Rendering.ShadowCastingMode.Off;
 
                 staticPieces.Add(newBuilding);
             }
@@ -42,7 +40,7 @@ public class BuildingGenerator : MonoBehaviour
     }
 
     Vector3 CreateStartingPosition() {
-        float roughBuildingSizeOffset = 15f;
+        float roughBuildingSizeOffset = 25f;
 
         float xPos;
         for (; ; ) {
