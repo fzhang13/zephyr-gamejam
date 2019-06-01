@@ -79,14 +79,18 @@ public class BuildingGenerator : MonoBehaviour
             &&
             staticPieces.Count > 0
         ) {
-            int pieceToMove;
-            for(; ; ) {
+            int pieceToMove = 0;
+            for(int i = 0; i < 100; ++i) {
+                if (i == 99) {
+                    return;
+                }
+
                 bool collision = false;
                 pieceToMove = Random.Range(0, staticPieces.Count);
                 Bounds pieceToMoveCol = staticPieces[pieceToMove]
                     .GetComponent<Collider>().bounds;
-                for (int i = 0; i < movingPieces.Count; ++i) {
-                    Bounds movingPieceCol = movingPieces[i]
+                for (int j = 0; j < movingPieces.Count; ++j) {
+                    Bounds movingPieceCol = movingPieces[j]
                         .GetComponent<Collider>().bounds;
                     if (pieceToMoveCol.Intersects(movingPieceCol)) {
                         collision = true;
