@@ -472,11 +472,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingPieces:
-  - prefab: {fileID: 802900677895684165, guid: 48ac3c1431303c04cba5020f2ef0241f, type: 3}
-    count: 250
-  - prefab: {fileID: 7397739541424309152, guid: 4f3ff9823a265594d8b8c6619009378e,
+  - prefab: {fileID: 5544634284100569835, guid: ef178af865517492c8be998e5d1c2af7,
       type: 3}
-    count: 250
+    count: 50
+  - prefab: {fileID: 8819445046258223322, guid: 26c5e1aea8c890999881101f88bdffc3,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 1635110068925086820, guid: 04751d42d2e0c57bebf71a8416a51cb4,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 4179309030252129247, guid: 80fa0bfdb486e6a019805bfe76a2f063,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 7510385205847637396, guid: acdf65bc3f2f757bc9e8e4a30436a24e,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 3791179638473335161, guid: 4074c7b04d55ad99587b9dc66f593b55,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 1771831803625418907, guid: 21c5e6562396f8af3b65278e4c0a3a67,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 5236534244192063651, guid: a10b0123f0653966096895df517112e9,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 1071418665059424844, guid: 3cfb033259386152196ac7c5b456c721,
+      type: 3}
+    count: 50
+  - prefab: {fileID: 6297904058913352460, guid: 179cd0827aee93679823bd819243dee1,
+      type: 3}
+    count: 50
   randMinScale: 0.8
   randMaxScale: 1.2
   addMovementDelay: 0.025
