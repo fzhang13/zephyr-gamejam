@@ -67,10 +67,10 @@
     <Compile Include="Assets\Scripts\BuildingGenerator.cs" />
     <Compile Include="Assets\Scripts\CurbGenerator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\SimpleCharacterControl.cs" />
     <Compile Include="Assets\Scripts\WorldRotater.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/felixzhang/Downloads/zephyr/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
